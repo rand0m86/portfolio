@@ -8,6 +8,8 @@ Site is created with a strong desire to try new technologies and libraries. [Jee
 
 [Webpack starter - GitHub](https://github.com/webpack/react-starter)
 
+[React JS](https://facebook.github.io/react/)
+
 [Webpack and React is awesome](http://christianalfoni.com/articles/2014_12_13_Webpack-and-react-is-awesome)
 
 [Jeet CSS][1]
