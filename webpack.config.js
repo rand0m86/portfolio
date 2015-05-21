@@ -26,9 +26,13 @@ var config = {
     noParse: [],
     loaders: [
       {
-        test: /\.js|\.jsx$/,
+        test: /\.js$|\.jsx$/,
         loader: 'babel?optional[]=runtime',
         exclude: [nodeModulesDir]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
       },
       {
         test: /\.styl$/,
