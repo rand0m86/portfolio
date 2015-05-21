@@ -14,5 +14,5 @@ Site is created with a strong desire to try new technologies and libraries. Jeet
 [Axis CSS](http://axis.netlify.com/)
 [Landing page template](http://ironsummitmedia.github.io/startbootstrap-landing-page/)
 
-[1](http://getbootstrap.com/)
-[2](https://learnboost.github.io/stylus/)
+[1]: http://getbootstrap.com/
+[2]: https://learnboost.github.io/stylus/
