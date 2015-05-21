@@ -6,29 +6,43 @@ edit()
 cf()
 // bp = desktop-cutoff//960px
 desktop-cutoff = 1050px
+mobile-cutoff = 400px
+nav-height = 80px
 
 body
   background-color: #F5F5F5
 
 .navigation
   background-color: #00a087
-  height: 80px
-  line-height: 80px
+  height: nav-height
+  line-height: nav-height
   a
+    color white
     span(1/8)
     shift(1/8)
     text-align: center
-    color white
     text-decoration none
   nav
     span(1/8)
     shift(5/8)
     a
-      color white
       padding 0 30px
-      text-decoration none
 .intro
-  // background-image url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/intro-bg.jpg)// no-repeat center center
+  color white
+  background: url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/intro-bg.jpg) no-repeat center center
+  padding: nav-height 0px
+  background-size: cover
+  article
+    center(500px)
+    padding: 5% 0
+    font-family: 'Lato', sans-serif
+    text-align: center
+    h1
+      font-size: 4em
+    h2
+      font-size: 2em
+    hr
+      width: 90%
       // padding 0 2rem
   // ul
   //   span(2/8)
@@ -45,4 +59,20 @@ body
 //   +below(desktop-cutoff)
 //     stack()
 
-  
+/* Fonts */
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}

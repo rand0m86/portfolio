@@ -30,6 +30,7 @@ var config = {
         loader: 'babel?optional[]=runtime',
         exclude: [nodeModulesDir]
       },
+      { test: /\.woff2$/, loader: 'url-loader?limit=100000' },
       {
         test: /\.css$/,
         loader: 'style!css'
