@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-var isDev = true;//process.env.NODE_ENV;
+var isDev = process.env.NODE_ENV || true;
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var nodeModulesDir = path.join(__dirname, '/node_modules');
