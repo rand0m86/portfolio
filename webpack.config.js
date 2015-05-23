@@ -32,10 +32,6 @@ var config = {
       },
       { test: /\.woff2$/, loader: 'url-loader?limit=100000' },
       {
-        test: /\.css$/,
-        loader: 'style!css'
-      },
-      {
         test: /\.styl$/,
         loader: isDev ?
           'style!css!stylus'
