@@ -35,14 +35,14 @@ var config = {
       {
         test: /\.styl$/,
         loader: isDev ?
-          'style!css!stylus'
+          'style!css!stylus?paths[]=node_modules/jeet/stylus/'
           : ExtractTextPlugin.extract('stylus', 'css-loader!stylus-loader')
       }
     ]
   },
   resolve: {
     modulesDirectories: ['node_modules'],
-    extensions: ['', '.js', '.jsx', '.json']
+    extensions: ['', '.js', '.jsx', '.json', '.styl']
   }
 };
 
