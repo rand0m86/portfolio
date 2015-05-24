@@ -7,21 +7,22 @@ var nodeModulesDir = path.join(__dirname, '/node_modules');
 
 var config = {
   entry: {
-    app: ['./app/app.js']
+    app: ['./app/app.js'],
+    vendor: [ 'react' ]
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    isDev ? new ExtractTextPlugin('app.css', {allChunks: true}) : '',
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'app',
-      filename: null
-    })
-  ],
   output: {
     publicPath: '/',
     path: path.join(__dirname, '/build'),
     filename: 'bundle.js'
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    isDev ? new ExtractTextPlugin('app.css', {allChunks: true}) : '',
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'vendor.bundle.js'
+    })
+  ],
   module: {
     noParse: [],
     loaders: [
